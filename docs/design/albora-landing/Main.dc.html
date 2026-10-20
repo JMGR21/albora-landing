@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>Albora — Agenda para barberías y estéticas</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=DM+Sans:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:#F3EEE6}
+a{color:#B2342A}a:hover{color:#8E2820}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+.faq-plus{transition:transform .2s ease}
+.cta:hover{filter:brightness(1.08)}
+</style>
+</helmet>
+
+<div style="width: 100%; background: #F3EEE6; color: #1E1B18; font-family: 'DM Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.5;">
+
+<!-- 1 · HERO -->
+<header style="background: #1E1B18; color: #F3EEE6; padding: 20px 20px 0;">
+  <div style="max-width: 1080px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+      <span role="img" aria-label="Albora" style="font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 36px; letter-spacing: -1.3px; line-height: 1; color: #F3EEE6; display: inline-flex; align-items: baseline;">alb<svg viewBox="0 0 52 50" aria-hidden="true" style="width: 0.58em; height: 0.558em; margin: 0 0.02em 0 0.03em;"><path d="M8 44 A18 18 0 0 1 44 44 Z" fill="{{accent}}"></path><line x1="4" y1="46.5" x2="48" y2="46.5" stroke="currentColor" stroke-width="7" stroke-linecap="round"></line><line x1="26" y1="18" x2="26" y2="9" stroke="{{accent}}" stroke-width="5" stroke-linecap="round"></line><line x1="9.5" y1="25" x2="4" y2="19.5" stroke="{{accent}}" stroke-width="5" stroke-linecap="round"></line><line x1="42.5" y1="25" x2="48" y2="19.5" stroke="{{accent}}" stroke-width="5" stroke-linecap="round"></line></svg>ra</span>
+      <span style="font-size: 13px; font-weight: 500; color: #B9AE9F; border: 1px solid #4A443D; border-radius: 999px; padding: 6px 12px;">Barberías y estéticas</span>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; padding: 40px 0 48px;">
+      <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+        <p style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: {{accent}};">Tu agenda, atendida</p>
+        <h1 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(46px, 11vw, 80px); line-height: 0.98; text-transform: uppercase; letter-spacing: 0.5px;">Tus clientes agendan solos.<span style="display: block; color: {{accent}};">Tú no tocas el celular.</span></h1>
+        <p style="margin: 0; font-size: 19px; color: #DCD3C6; max-width: 460px;">Nosotros armamos y cuidamos tu agenda. Tú te dedicas a cortar, peinar y atender a quien está en tu silla.</p>
+        <a class="cta" href="{{wa}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 24px; background: #157A42; color: #FFFFFF; font-weight: 700; font-size: 18px; text-decoration: none; border-radius: 14px; align-self: flex-start;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"></path><path d="M9 9.5c0 2.8 2.7 5.5 5.5 5.5l1.5-1.6-2-1-1 .9c-1-.4-1.9-1.3-2.3-2.3l.9-1-1-2z"></path></svg>
+          Escríbenos por WhatsApp
+        </a>
+        <p style="margin: 0; font-size: 14px; color: #B9AE9F; display: flex; align-items: center; gap: 8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+          Te contesta una persona, no un robot.
+        </p>
+      </div>
+
+      <!-- Ilustración: celular del cliente recibiendo su recordatorio -->
+      <div style="flex: 1 1 260px; display: flex; justify-content: center;">
+        <div role="img" aria-label="Ejemplo de recordatorio por WhatsApp que recibe un cliente" style="width: 270px; background: #0F0D0B; border-radius: 36px; padding: 10px; border: 1px solid #3A352F;">
+          <div style="background: #EFE7DA; border-radius: 28px; overflow: hidden;">
+            <div style="background: #1B4D3A; color: #FFFFFF; padding: 14px 14px 12px; display: flex; align-items: center; gap: 10px;">
+              <div style="width: 34px; height: 34px; border-radius: 50%; background: #F3EEE6; display: flex; align-items: center; justify-content: center; color: #1E1B18;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"></path></svg>
+              </div>
+              <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                <span style="font-weight: 700; font-size: 14px;">Barbería El Compa</span>
+                <span style="font-size: 11px; color: #CFE3D8;">en línea</span>
+              </div>
+            </div>
+            <div style="padding: 14px 12px 18px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; line-height: 1.4;">
+              <span style="align-self: center; font-size: 11px; color: #5E554B; background: #E3D9C9; padding: 3px 10px; border-radius: 8px;">Hoy · 6:00 pm</span>
+              <div style="align-self: flex-start; max-width: 88%; background: #FFFFFF; border-radius: 4px 12px 12px 12px; padding: 9px 11px; color: #1E1B18;">
+                Hola Luis, te esperamos <b>mañana a las 5:00 pm</b> para tu corte y barba con Toño.
+                <div style="margin-top: 8px; display: flex; gap: 6px;">
+                  <span style="flex: 1; text-align: center; border: 1px solid #1B4D3A; color: #1B4D3A; border-radius: 8px; padding: 5px 0; font-weight: 700; font-size: 12px;">Confirmo</span>
+                  <span style="flex: 1; text-align: center; border: 1px solid #1B4D3A; color: #1B4D3A; border-radius: 8px; padding: 5px 0; font-weight: 700; font-size: 12px;">Cambiar hora</span>
+                </div>
+              </div>
+              <div style="align-self: flex-end; max-width: 80%; background: #D6F0C9; border-radius: 12px 4px 12px 12px; padding: 8px 11px; color: #1E1B18; display: flex; align-items: flex-end; gap: 6px;">
+                Confirmo
+                <svg width="16" height="12" viewBox="0 0 18 12" fill="none" stroke="#2470A6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6.5 4.5 10 11 2"></path><path d="M7 9.5l.5.5L14 2"></path></svg>
+              </div>
+              <div style="align-self: flex-start; max-width: 88%; background: #FFFFFF; border-radius: 4px 12px 12px 12px; padding: 8px 11px; color: #1E1B18;">¡Listo! Tu lugar está apartado. Nos vemos mañana.</div>
+              <span style="align-self: center; margin-top: 6px; font-size: 11px; font-weight: 700; color: #1B4D3A; background: #FFFFFF; padding: 4px 10px; border-radius: 999px; display: inline-flex; align-items: center; gap: 5px;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"></path></svg>
+                Recordatorio enviado solito
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div aria-hidden="true" style="height: 14px; background: repeating-linear-gradient(-45deg, #B2342A 0 14px, #F3EEE6 14px 28px, #1F3A5F 28px 42px, #F3EEE6 42px 56px);"></div>
+
+<!-- 2 · CÓMO FUNCIONA -->
+<section id="como-funciona" style="padding: 56px 20px;">
+  <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <p style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #B2342A;">Así de fácil</p>
+      <h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(36px, 8vw, 56px); line-height: 1; text-transform: uppercase;">Tú no le mueves a nada</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+      <div style="background: #FFFFFF; border: 1px solid #E2D8C9; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <span style="font-family: Anton, Impact, sans-serif; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #FFFFFF; background: #1E1B18; padding: 6px 12px; border-radius: 8px;">Turno 1</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 10h18"></path><path d="M8 14h3M8 17h6"></path></svg>
+        </div>
+        <h3 style="margin: 0; font-size: 21px; line-height: 1.25;">Armamos tu agenda con tus reglas</h3>
+        <p style="margin: 0; color: #5E554B;">Nos dices tus horarios, tus servicios, cuánto dura cada uno y quién atiende. Nosotros lo dejamos listo.</p>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #E2D8C9; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <span style="font-family: Anton, Impact, sans-serif; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #FFFFFF; background: #1E1B18; padding: 6px 12px; border-radius: 8px;">Turno 2</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M11 18h2"></path><path d="m9.5 10 2 2 3.5-4"></path></svg>
+        </div>
+        <h3 style="margin: 0; font-size: 21px; line-height: 1.25;">Tus clientes agendan solos</h3>
+        <p style="margin: 0; color: #5E554B;">Apartan su lugar desde un link o por WhatsApp, a la hora que sea. Les llega su recordatorio para que no te dejen plantado.</p>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #E2D8C9; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <span style="font-family: Anton, Impact, sans-serif; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #FFFFFF; background: #1E1B18; padding: 6px 12px; border-radius: 8px;">Turno 3</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 11V7a5 5 0 0 1 10 0v4"></path><rect x="3" y="11" width="4" height="6" rx="1.5"></rect><rect x="17" y="11" width="4" height="6" rx="1.5"></rect><path d="M19 17v1a3 3 0 0 1-3 3h-3"></path></svg>
+        </div>
+        <h3 style="margin: 0; font-size: 21px; line-height: 1.25;">Lo que salga de lo normal, lo vemos nosotros</h3>
+        <p style="margin: 0; color: #5E554B;">Un cliente que llega tarde, una duda, un cambio de último momento. Lo resolvemos y tú sigues en la silla.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · QUÉ INCLUYE (estilo pizarrón de precios) -->
+<section id="que-incluye" style="padding: 0 20px 56px;">
+  <div style="max-width: 1080px; margin: 0 auto; background: #1E1B18; color: #F3EEE6; border-radius: 22px; padding: 32px 22px; border: 6px solid #3A2E22;">
+    <div style="text-align: center; display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px;">
+      <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: {{accent}};">Lista de servicios</p>
+      <h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(34px, 8vw, 52px); line-height: 1; text-transform: uppercase;">Qué incluye</h2>
+    </div>
+    <ul style="list-style: none; margin: 0 auto; padding: 0; max-width: 720px; display: flex; flex-direction: column; gap: 18px;">
+      <sc-for list="{{servicios}}" as="s" hint-placeholder-count="6">
+        <li style="display: flex; gap: 14px; align-items: flex-start;">
+          <div style="flex: none; width: 40px; height: 40px; border-radius: 10px; border: 1.5px solid #4A443D; display: flex; align-items: center; justify-content: center; color: {{accent}};">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{s.icon}}"></path></svg>
+          </div>
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px;">
+            <div style="display: flex; align-items: baseline; gap: 8px;">
+              <span style="font-weight: 700; font-size: 17px;">{{s.titulo}}</span>
+              <span aria-hidden="true" style="flex: 1; min-width: 16px; border-bottom: 2px dotted #5A5249; transform: translateY(-4px);"></span>
+              <span style="font-family: Anton, Impact, sans-serif; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: {{accent}};">Incluido</span>
+            </div>
+            <span style="font-size: 15px; color: #B9AE9F;">{{s.detalle}}</span>
+          </div>
+        </li>
+      </sc-for>
+    </ul>
+  </div>
+</section>
+
+<!-- 4 · PILOTO FUNDADOR -->
+<section id="piloto" style="background: #B2342A; color: #FFFFFF; padding: 56px 20px;">
+  <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: center;">
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+      <p style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #FBE3DC;">Piloto fundador</p>
+      <h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(38px, 9vw, 60px); line-height: 1; text-transform: uppercase;">Solo 5 lugares para empezar</h2>
+      <p style="margin: 0; font-size: 18px; color: #FBE3DC;">Queremos hacerlo bien y con calma, así que arrancamos con pocos negocios para atender a cada uno de cerca.</p>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="display: flex; gap: 8px;" aria-hidden="true">
+          <sc-for list="{{sillas}}" as="silla" hint-placeholder-count="5">
+            <div style="width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: {{silla.fondo}}; color: {{silla.color}}; border: 2px solid #FFFFFF;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v7H7z"></path><path d="M5 10h14v4H5z"></path><path d="M12 14v4M8 21h8M12 18v3"></path></svg>
+            </div>
+          </sc-for>
+        </div>
+        <span style="font-weight: 700; font-size: 15px;">{{cuposTexto}}</span>
+      </div>
+    </div>
+
+    <div style="flex: 1 1 320px; min-width: 0; background: #FFFFFF; color: #1E1B18; border-radius: 20px; padding: 24px 22px; display: flex; flex-direction: column; gap: 16px;">
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none;"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+        <div><b style="font-size: 18px;">60 días acompañándote</b><br><span style="color: #5E554B;">Te ayudamos a que tus clientes se acostumbren a agendar solos.</span></div>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none;"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"></path></svg>
+        <div><b style="font-size: 18px;">Configuración incluida</b><br><span style="color: #5E554B;">Armamos todo y pasamos tus citas actuales. Sin costo extra.</span></div>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none;"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"></path><path d="m9 12 2 2 4-4"></path></svg>
+        <div><b style="font-size: 18px;">Si no te convence, te regresamos tu dinero</b><br><span style="color: #5E554B;">Garantía de devolución en tu primer mes.</span></div>
+      </div>
+      <a class="cta" href="{{waPiloto}}" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; background: #157A42; color: #FFFFFF; font-weight: 700; font-size: 18px; text-decoration: none; border-radius: 14px;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"></path><path d="M9 9.5c0 2.8 2.7 5.5 5.5 5.5l1.5-1.6-2-1-1 .9c-1-.4-1.9-1.3-2.3-2.3l.9-1-1-2z"></path></svg>
+        Quiero apartar mi lugar
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · QUIÉN ESTÁ DETRÁS -->
+<section id="nosotros" style="padding: 56px 20px;">
+  <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 28px; align-items: center;">
+    <div role="img" aria-label="Espacio para la foto de los fundadores" style="flex: 1 1 280px; aspect-ratio: 4 / 3; max-width: 480px; background: #E2D8C9; border: 2px dashed #A69886; border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: #5E554B;">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+      <span style="font-weight: 700; font-size: 14px; letter-spacing: 1px;">[FOTO DE LOS FUNDADORES]</span>
+    </div>
+    <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+      <p style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #B2342A;">Quién está detrás</p>
+      <h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(34px, 8vw, 50px); line-height: 1; text-transform: uppercase;">Somos de aquí y nos puedes escribir</h2>
+      <p style="margin: 0; font-size: 18px; color: #3E3832;">Somos Miguel y [NOMBRE], de Puerto Vallarta. Llevamos años haciendo software y ahora queremos que tu agenda trabaje para ti, no al revés.</p>
+      <span style="align-self: flex-start; font-size: 14px; font-weight: 700; color: #1E1B18; background: #FFFFFF; border: 1px solid #E2D8C9; border-radius: 999px; padding: 8px 14px;">Albora es parte de Alba Studios</span>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · PREGUNTAS FRECUENTES -->
+<section id="preguntas" style="padding: 0 20px 64px;">
+  <div style="max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+    <h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(34px, 8vw, 50px); line-height: 1; text-transform: uppercase;">Lo que todos preguntan</h2>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <details open style="background: #FFFFFF; border: 1px solid #E2D8C9; border-radius: 16px; padding: 4px 18px;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; font-weight: 700; font-size: 18px;">¿Mis clientes tienen que descargar algo?<svg class="faq-plus" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" style="flex: none;"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <p style="margin: 0 0 16px; color: #5E554B;">No. Agendan desde un link que se abre en su celular o escribiendo por WhatsApp, como ya lo hacen.</p>
+      </details>
+      <details style="background: #FFFFFF; border: 1px solid #E2D8C9; border-radius: 16px; padding: 4px 18px;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; font-weight: 700; font-size: 18px;">¿Sigo usando mi WhatsApp?<svg class="faq-plus" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" style="flex: none;"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <p style="margin: 0 0 16px; color: #5E554B;">Sí, tu WhatsApp sigue siendo tuyo. La diferencia es que ya no tienes que contestar para dar citas ni mandar recordatorios.</p>
+      </details>
+      <details style="background: #FFFFFF; border: 1px solid #E2D8C9; border-radius: 16px; padding: 4px 18px;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; font-weight: 700; font-size: 18px;">¿Y si quiero cancelar?<svg class="faq-plus" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B2342A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" style="flex: none;"><path d="M12 5v14M5 12h14"></path></svg></summary>
+        <p style="margin: 0 0 16px; color: #5E554B;">Nos avisas por WhatsApp y listo. Si es dentro de tu primer mes, te regresamos lo que pagaste.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · FOOTER -->
+<div aria-hidden="true" style="height: 14px; background: repeating-linear-gradient(-45deg, #B2342A 0 14px, #F3EEE6 14px 28px, #1F3A5F 28px 42px, #F3EEE6 42px 56px);"></div>
+<footer style="background: #1E1B18; color: #F3EEE6; padding: 48px 20px 36px;">
+  <div style="max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px;">
+    <h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(32px, 8vw, 48px); line-height: 1.05; text-transform: uppercase;">¿Platicamos?</h2>
+    <p style="margin: 0; font-size: 18px; color: #DCD3C6; max-width: 420px;">Mándanos un mensaje y te contamos cómo quedaría tu agenda. Sin compromiso.</p>
+    <a class="cta" href="{{wa}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 28px; background: #157A42; color: #FFFFFF; font-weight: 700; font-size: 18px; text-decoration: none; border-radius: 14px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"></path><path d="M9 9.5c0 2.8 2.7 5.5 5.5 5.5l1.5-1.6-2-1-1 .9c-1-.4-1.9-1.3-2.3-2.3l.9-1-1-2z"></path></svg>
+      Escríbenos por WhatsApp
+    </a>
+    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #3A352F; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+      <span role="img" aria-label="Albora" style="font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 32px; letter-spacing: -1.2px; line-height: 1; color: #F3EEE6; display: inline-flex; align-items: baseline;">alb<svg viewBox="0 0 52 50" aria-hidden="true" style="width: 0.58em; height: 0.558em; margin: 0 0.02em 0 0.03em;"><path d="M8 44 A18 18 0 0 1 44 44 Z" fill="{{accent}}"></path><line x1="4" y1="46.5" x2="48" y2="46.5" stroke="currentColor" stroke-width="7" stroke-linecap="round"></line><line x1="26" y1="18" x2="26" y2="9" stroke="{{accent}}" stroke-width="5" stroke-linecap="round"></line><line x1="9.5" y1="25" x2="4" y2="19.5" stroke="{{accent}}" stroke-width="5" stroke-linecap="round"></line><line x1="42.5" y1="25" x2="48" y2="19.5" stroke="{{accent}}" stroke-width="5" stroke-linecap="round"></line></svg>ra</span>
+      <span style="font-size: 14px; color: #B9AE9F;">de Alba Studios · Puerto Vallarta · 2026</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D3A453","options":["#D3A453","#E0B872","#C8A27A","#E5C07B"]},"cuposLibres":{"editor":"int","default":5,"min":0,"max":5},"telefono":{"editor":"text","default":"52XXXXXXXXXX"},"$preview":{"width":390,"height":5600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#D3A453';
+    const libres = Math.max(0, Math.min(5, this.props.cuposLibres ?? 5));
+    const tel = this.props.telefono ?? '52XXXXXXXXXX';
+    const msg = (t) => 'https://wa.me/' + tel + '?text=' + encodeURIComponent(t);
+    const sillas = [0, 1, 2, 3, 4].map((i) => {
+      const libre = i < libres;
+      return { fondo: libre ? '#FFFFFF' : 'transparent', color: libre ? '#B2342A' : '#FFFFFF' };
+    });
+    return {
+      accent,
+      sillas,
+      cuposTexto: libres === 0 ? 'Cupos llenos por ahora' : (libres === 1 ? 'Queda 1 lugar de 5' : 'Quedan ' + libres + ' de 5 lugares'),
+      wa: msg('Hola, vi la página de Albora y quiero saber cómo funcionaría en mi negocio.'),
+      waPiloto: msg('Hola, quiero apartar un lugar en el piloto fundador de Albora.'),
+      servicios: [
+        { titulo: 'Citas por link o WhatsApp', detalle: 'Tus clientes apartan su lugar a cualquier hora, sin llamarte.', icon: 'M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1' },
+        { titulo: 'Confirmación y recordatorio', detalle: 'Cada cliente recibe su aviso por WhatsApp un día antes.', icon: 'M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0' },
+        { titulo: 'Cambios y cancelaciones', detalle: 'Si alguien no puede, mueve su cita y el lugar se libera solo.', icon: 'M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.2L3 16M3 21v-5h5' },
+        { titulo: 'Tu día, resumido', detalle: 'Cada mañana te llega quién viene y a qué hora.', icon: 'M9 4h6v3H9zM7 5H5v16h14V5h-2M8 11h8M8 15h8M8 19h5' },
+        { titulo: 'Configuración de tu agenda', detalle: 'Horarios, servicios, precios y quién atiende. Lo armamos nosotros.', icon: 'M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0M14 4v4M8 10v4M16 16v4' },
+        { titulo: 'Pasamos tus citas actuales', detalle: 'Lo que tienes en libreta, en otra app o en el celular, lo movemos por ti.', icon: 'M5 12h14M13 6l6 6-6 6' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
