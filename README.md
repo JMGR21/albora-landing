@@ -28,6 +28,7 @@ página — WhatsApp.
 | **Stack** | Next.js 16 (App Router, Turbopack) · React 19 · TypeScript · Tailwind CSS v4 |
 | **Fuentes** | [Anton](https://fonts.google.com/specimen/Anton) (titulares) · [DM Sans](https://fonts.google.com/specimen/DM+Sans) (cuerpo), vía `next/font` |
 | **Imágenes** | `next/image` + `sharp`, con placeholders automáticos mientras no haya foto |
+| **Analítica** | [Vercel Analytics](https://vercel.com/docs/analytics) — visitas por página y clics en los botones de WhatsApp (`wa_click`, ver `components/albora/WhatsAppLink.tsx`) |
 | **Idioma** | Español (México) |
 
 ---
@@ -62,6 +63,7 @@ app/
   opengraph-image.tsx  vista previa al compartir el link (WhatsApp, redes)
   twitter-image.tsx    misma imagen, para Twitter/X
 components/albora/  un componente por sección (Hero, Piloto, Nosotros, ...)
+  WhatsAppLink.tsx   botón de WhatsApp con tracking de clic (Vercel Analytics)
 lib/
   albora-config.ts   WhatsApp, cupos, enlaces, dominio — lo que cambia seguido
   albora-content.ts  copy estático (servicios, pasos, preguntas)
@@ -108,21 +110,17 @@ compartido por WhatsApp.
 
 ## Despliegue
 
+Se despliega en [Vercel](https://vercel.com). Cada push a `main` dispara un deploy; Vercel Analytics
+(visitas y clics en WhatsApp) ya viene incluido vía `@vercel/analytics`, sin configuración extra.
+
+Para correrlo en otro lado (Docker, VPS):
+
 ```bash
 pnpm build
 pnpm start
 ```
 
-- La optimización de imágenes usa `sharp` (ya está en `dependencies`); en hosting propio (Docker, VPS)
-  corre `pnpm install` ahí también para que compile su binario nativo.
+- La optimización de imágenes usa `sharp` (ya está en `dependencies`); en hosting propio corre
+  `pnpm install` ahí también para que compile su binario nativo.
 - `robots.txt` y `sitemap.xml` se generan solos desde `app/robots.ts` y `app/sitemap.ts`, usando `siteUrl`.
-- Antes de publicar, actualiza `siteUrl` en `lib/albora-config.ts` (o la env var `NEXT_PUBLIC_SITE_URL`)
-  al dominio real.
-
----
-
-## Pendientes de contenido
-
-- [ ] Número de Instagram real (`instagramUrl` en `lib/albora-config.ts`, hoy es `"#"`).
-- [ ] Apellido y rol de Anthony en "Quiénes somos" ([`components/albora/Nosotros.tsx`](components/albora/Nosotros.tsx)).
-- [ ] Dominio real de producción (`siteUrl`).
+- `siteUrl` en `lib/albora-config.ts` (o la env var `NEXT_PUBLIC_SITE_URL`) debe apuntar al dominio real.

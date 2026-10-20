@@ -33,7 +33,7 @@ export const footerExploraLinks = [
   { href: "#preguntas", label: "Preguntas" },
 ] as const;
 
-export const instagramUrl = "https://www.instagram.com/albastudios1/?hl=es";
+export const instagramUrl: string = "https://www.instagram.com/albastudios1/?hl=es";
 
 export const albaStudiosUrl = "https://albastudiosagency.com/";
 
